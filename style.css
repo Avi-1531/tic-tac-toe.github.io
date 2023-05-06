@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    /* justify-content: center; */
+    background: linear-gradient(to bottom right, rgba(252, 203, 144, 1), rgba(213, 126, 235, 1));
+    color: #994c4c;
+    font-size: 25px;
+    font-weight: bold;
+    height: 54px;
+    padding: 5px 9px;
+    align-items: center;
+}
+.container{
+    display:flex;
+    
+}
+.playbox{
+    /* background-color: red; */
+    width:55%;
+    height:100vh;
+}
+
+
+
+.gridbox{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 200px 200px 200px;
+  justify-content: center;
+  margin-top: 70px;
+  margin-left: 132px;
+  position: relative;
+  
+ 
+
+}
+.box{
+    display: flex;
+    height:200px;
+    width:200px;
+    border:4px solid black;
+    background-color: rgb(227, 206, 247);
+    align-items: center;
+        justify-content: center;
+        font-size: 4rem;
+        cursor: pointer;
+    
+}
+
+.br{
+    border-right: none;
+}
+.bl{
+    border-left: none;
+}
+.bb{
+    border-bottom: none;
+}
+.bt{
+    border-top: none;
+}
+
+.scorebox{
+    display:flex;
+    /* background-color: aqua; */
+    width:46%;
+    height:80vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.turn{
+    margin-top: 22px;
+    font-size: 20px;
+    
+}
+.winning{
+    font-size: 4rem;
+    margin-top: 23px;
+    margin-left: 11vw;
+}
+.tenor-gif-embed{
+    height: 0;
+    margin-left: 23px;
+    transition: height 1s ease-in-out;
+}
+.heading{
+    font-size: 49px;
+    margin-bottom: 40px;
+}
+.winpost{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 12px;
+}
+.btn{
+    border-radius: 16px;
+    padding: 11px 3px;
+    margin: 9px 4px;
+    width: 91px;
+    background: linear-gradient(to bottom right, rgba(252, 203, 144, 1), rgba(213, 126, 235, 1));
+    font-size: 16px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.line{
+    border: 2px solid #cd8e8e;
+    width: 0;
+    transition: width 1s ease-in-out;
+    /* margin-left: 39px; */
+    position: absolute;
+    /* transform: translate(280px, 281px) rotate(90deg); */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsivenes  */
+@media (min-width:697px) and (max-width: 1414px) {
+    .heading{
+        font-size: 26px;
+    margin-bottom: 16px;
+    }
+    .gridbox{
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+      grid-template-rows: 100px 100px 100px;
+      justify-content: center;
+      margin-top: 70px;
+      margin-left: 34px;
+      
+    }
+    .box{
+        display: flex;
+        height:100px;
+        width:100px;
+        border:4px solid black;
+        background-color: rgb(227, 206, 247);
+        align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            cursor: pointer;
+        
+    }
+    .br{
+        border-right: none;
+    }
+    .bl{
+        border-left: none;
+    }
+    .bb{
+        border-bottom: none;
+    }
+    .bt{
+        border-top: none;
+    }
+    .btn{
+        border-radius: 16px;
+    padding: 9px 8px;
+    margin: 9px 4px;
+    width: 73px;
+    background: linear-gradient(to bottom right, rgba(252, 203, 144, 1), rgba(213, 126, 235, 1));
+    font-size: 12px;
+    font-weight: bolder;
+    cursor: pointer;
+    }
+    .winning{
+        font-size: 35px;
+    margin-top: 66px;
+    }
+    .gif div{
+        width:45px;
+    }
+    .scorebox{
+        display: flex;
+    /* background-color: aqua; */
+    width: 46%;
+    height: 80vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 50px;
+       
+    }
+   
+
+}
+
+
+@media (min-width:300px) and (max-width: 697px) {
+    .heading{
+        font-size: 32px;
+        margin-bottom: 4px;
+        /* margin-left: 12px; */
+        text-align: center;
+    }
+    .gridbox{
+        display: grid;
+    grid-template-columns: 90px 90px 90px;
+    grid-template-rows: 90px 90px 90px;
+    justify-content: center;
+    margin-top: 70px;
+    margin-left: -14px;
+      
+    }
+    .playbox{
+        /* background-color: red; */
+    width: 91vw;
+    height: 60vh;
+    display: flex;
+    margin-left: 32px;
+    /* align-items: center; */
+    justify-content: center;
+    }
+    
+    .box{
+        display: flex;
+        height:90px;
+        width:90px;
+        border:4px solid black;
+        background-color: rgb(227, 206, 247);
+        align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            cursor: pointer;
+        
+    }
+    .br{
+        border-right: none;
+    }
+    .bl{
+        border-left: none;
+    }
+    .bb{
+        border-bottom: none;
+    }
+    .bt{
+        border-top: none;
+    }
+    .btn{
+        border-radius: 16px;
+        padding: 9px 8px;
+        margin: 19px 4px;
+        width: 80px;
+        background: linear-gradient(to bottom right, rgba(252, 203, 144, 1), rgba(213, 126, 235, 1));
+        font-size: 12px;
+        font-weight: bolder;
+        cursor: pointer;
+    }
+    .winning{
+        font-size: 29px;
+        /* margin-top: 66px; */
+        text-align: center;
+    }
+    .gif div{
+        margin-left: -12px;
+    }
+    .scorebox{
+        display: flex;
+        /* background-color: aqua; */
+        width: 97%;
+        height: 120vh;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+       
+    }
+    .winpost{
+        display: flex;
+        flex-direction: column;
+        margin-top: 12px;
+    }
+    .container{
+        display:flex;
+        
+        flex-direction: column;
+    }
+
+}
